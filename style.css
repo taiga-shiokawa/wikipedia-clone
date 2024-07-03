@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: white;
+  padding: 10px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo-title {
+  margin-right: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.wiki-title {
+  font-family: "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 24px;
+}
+
+.wiki-subtitle {
+  font-family: "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.search-input {
+  width: 300px;
+  flex-grow: 1;
+  padding: 5px 12px;
+  font-size: 14px;
+  border: 1px solid #a2a9b1;
+  border-right: none;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #3366cc;
+}
+
+.search-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #202122;
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #f0f0f0;
+}
+
+.account-links {
+  display: flex;
+  margin-left: 400px;
+}
+
+.account-links a {
+  margin-left: 10px;
+}
+
+.more-options {
+  margin-left: 10px;
+}
+
+.main-content {
+  max-width: 1500px;
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+}
+.sidebar h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.toggle-button {
+  background-color: #f8f9fa;
+  margin-left: 10px;
+  padding: 0 10px;
+  border: 0;
+  font-size: 10px;
+  cursor: pointer;
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+.sidebar li {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.sidebar a {
+  color: #0645ad;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
+.sidebar .expanded::before {
+  content: '▼';
+  font-size: 10px;
+  margin-right: 5px;
+}
+.sidebar .collapsed::before {
+  content: '▶';
+  font-size: 10px;
+  margin-right: 5px;
+}
+.sidebar .no-icon {
+  margin-left: 15px;
+}
+
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  width: 900px;
+}
+
+.content h1 {
+  font-weight: 100;
+}
+
+.table-of-contents {
+  display: flex;
+}
+
+.content-link {
+  margin: 7px 0;
+}
+
+.link-right {
+  display: inline;
+  margin-left: 800px;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+.link-right {
+  text-decoration: none;
+}
+
+.link-right a{
+  padding-left: 5px;
+}
+
+.info-box {
+  float: right;
+  width: 300px;
+  border: 1px solid #a2a9b1;
+  padding: 10px;
+  margin-left: 20px;
+}
+.info-box img {
+  max-width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+.name-img {
+  text-align: center;
+}
+
+.name {
+  background-color: rgb(233, 209, 74);
+  margin-bottom: 5px;
+}
